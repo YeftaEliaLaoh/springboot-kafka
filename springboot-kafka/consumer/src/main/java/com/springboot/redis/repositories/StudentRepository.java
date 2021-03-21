@@ -1,4 +1,4 @@
-package com.springboot.repositories;
+package com.springboot.redis.repositories;
 
 import com.springboot.model.Student;
 import org.springframework.data.repository.CrudRepository;

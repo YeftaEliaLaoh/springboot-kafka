@@ -1,4 +1,4 @@
-package com.springboot.service;
+package com.springboot.redis.service;
 
 import com.springboot.model.Student;
 import org.slf4j.Logger;

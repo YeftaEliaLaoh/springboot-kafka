@@ -1,7 +1,7 @@
-package com.springboot.service;
+package com.springboot.redis.service;
 
 import com.springboot.model.Student;
-import com.springboot.repositories.StudentRepository;
+import com.springboot.redis.repositories.StudentRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +20,6 @@ public class KafkaReceiver
     public void receiveData(Student student)
     {
         studentRepository.save(student);
-        LOGGER.info("Data - " + student.toString() + " received");
+        LOGGER.info("Data Kafka - " + student.toString() + " received");
     }
 }

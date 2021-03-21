@@ -1,4 +1,4 @@
-package com.springboot.config;
+package com.springboot.redis.config;
 
 import com.springboot.model.Student;
 import org.apache.kafka.clients.consumer.ConsumerConfig;

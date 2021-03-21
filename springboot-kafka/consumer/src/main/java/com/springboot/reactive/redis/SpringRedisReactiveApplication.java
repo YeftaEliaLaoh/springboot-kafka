@@ -1,13 +1,14 @@
-package com.springboot;
+package com.springboot.reactive.redis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KafkaProducerApplication
+public class SpringRedisReactiveApplication
 {
     public static void main(String[] args)
     {
-        SpringApplication.run(KafkaProducerApplication.class, args);
+        SpringApplication.run(SpringRedisReactiveApplication.class, args);
     }
 }
+
