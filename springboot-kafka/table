@@ -1,0 +1,7 @@
+CREATE TABLE `student` (
+  `student_Id` int(11) NOT NULL AUTO_INCREMENT,
+  `first_Name` varchar(45) DEFAULT NULL,
+  `last_Name` varchar(45) DEFAULT NULL,
+  `age` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`student_Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
