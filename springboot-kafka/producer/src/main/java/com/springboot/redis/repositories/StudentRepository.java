@@ -7,5 +7,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface StudentRepository extends CrudRepository<Student, Long>
 {
-    void update(Student student);
+    void update(String age,int studentId);
 }
+

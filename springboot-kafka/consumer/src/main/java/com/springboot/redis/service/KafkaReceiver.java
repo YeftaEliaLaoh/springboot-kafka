@@ -22,4 +22,12 @@ public class KafkaReceiver
         studentRepository.save(student);
         LOGGER.info("Data Kafka - " + student.toString() + " received");
     }
+
+    @KafkaListener(topics = "${kafka.topic.update}", groupId = "${kafka.consumer.group.id}")
+    public void updateData(Student student)
+    {
+        studentRepository.delete(student);
+        studentRepository.save(student);
+        LOGGER.info("Data Kafka - " + student.toString() + " received");
+    }
 }

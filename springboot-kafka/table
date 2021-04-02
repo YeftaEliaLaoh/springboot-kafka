@@ -3,5 +3,6 @@ CREATE TABLE `student` (
   `first_Name` varchar(45) DEFAULT NULL,
   `last_Name` varchar(45) DEFAULT NULL,
   `age` varchar(45) DEFAULT NULL,
+  `created_date` DATETIME DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`student_Id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
